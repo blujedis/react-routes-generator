@@ -1,0 +1,29 @@
+{
+  "name": "react-routes-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "rrg": "bin/cli"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "tsc -b",
+    "start": "tsc -b -w",
+    "release": "yarn clean && yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "fast-glob": "^3.2.5"
+  },
+  "devDependencies": {
+    "@types/ansi-colors": "^3.2.2",
+    "@types/node": "^14.14.41",
+    "rimraf": "^3.0.2"
+  }
+}

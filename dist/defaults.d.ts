@@ -1,0 +1,32 @@
+export declare type Options = typeof DEFAULTS;
+export declare const PKG: any;
+declare const DEFAULTS: {
+    force: boolean;
+    mode: "ts" | "js";
+    rootDir: string;
+    pagesDir: string;
+    ignoreKeys: string[];
+    lazyKey: string;
+    rootComponent: string;
+    outputName: string;
+    outputPath: string;
+    pagesPath: string;
+    importBasePath: string;
+    globFilters: string[];
+};
+declare const defaults: {
+    force: boolean;
+    mode: "ts" | "js";
+    rootDir: string;
+    pagesDir: string;
+    ignoreKeys: string[];
+    lazyKey: string;
+    rootComponent: string;
+    outputName: string;
+    outputPath: string;
+    pagesPath: string;
+    importBasePath: string;
+    globFilters: string[];
+};
+declare function merge(options?: Options): Options;
+export { defaults, merge };
